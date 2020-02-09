@@ -5,9 +5,9 @@
 
 const getActualLine = (lastLine) => {
     const actualLine = []
-    lastLine.forEach((column, index) => {
+    lastLine.forEach((node, index) => {
         const prevNode = lastLine[index - 1] || 0
-        actualLine.push(prevNode + column)
+        actualLine.push(prevNode + node)
     })
     actualLine.push(lastLine[lastLine.length - 1])
     return actualLine
