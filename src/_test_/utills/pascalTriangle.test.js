@@ -1,4 +1,4 @@
-const pascalTriangle = require('../index');
+const pascalTriangle = require('../../utils/pascalTriangle');
 
 describe('pascalTriangle', () => {
   it('Debe calcular los coeficientes del triángulo de Pascal para un número de línea específico', () => {
