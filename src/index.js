@@ -3,18 +3,18 @@
  * @return {number[]}
  */
 
-const pascalTriangle = (lineNumber) => {
-  const pascal = [];
+const pascalTriangle = (row) => {
+  const numbers = [];
 
-  for (let k = 0; k < lineNumber + 1; k++) {
-    if (k === 0 || k === lineNumber) {
-      pascal[k] = 1;
+  for (let column = 0; column < row + 1; column++) {
+    if (column === 0 || column === row) {
+      numbers[column] = 1;
     } else {
-      pascal[k] = (pascal[k - 1] * (lineNumber + 1 - k)) / k;
+      numbers[column] = (numbers[column - 1] * (row + 1 - column)) / column;
     }
   }
 
-  return pascal;
+  return numbers;
 };
 
 module.exports = pascalTriangle;
