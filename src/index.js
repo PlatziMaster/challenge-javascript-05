@@ -16,7 +16,7 @@ const pascalTriangle = (lineNumber) => {
     return number * factorial(number - 1);
   }
 
-  // Llenamos matriz bidemencional agregando los numero de la pirámide.
+  // Llenamos matriz agregando los numero de la ultima fila en la pirámide de pascal.
   let pascalTriangleArray = [];
   for (let j = 0; j <= lineNumber; j++) {
     pascalTriangleArray[j] = formula(lineNumber, j);
