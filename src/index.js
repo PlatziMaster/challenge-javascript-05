@@ -14,8 +14,8 @@ const pascalTriangle = (lineNumber) => {
             return current;
         default:
             for (let n = 2; n <= lineNumber; n++) {
-                previous = current;
-                current = new Array(n+1).fill(0);
+                previous = current.slice();
+                current = new Array(n+1);
                 let currentLength = current.length;
                 current[0] = 1;
                 current[currentLength-1] = 1;
