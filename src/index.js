@@ -4,16 +4,14 @@
  */
 
 const crtNewRow = (arr, n) => {
-    let num1 = 0;
-    let num2 = 0;
+
     let nxtLine = [];
 
     for(let i = 0; i < n-1; i++){
-        num1 = arr[i]
-        num2 = arr[i+1]
+        let num1 = arr[i]
+        let num2 = arr[i+1]
         nxtLine.push(num1 + num2)
       }
-
       nxtLine.push(1)
       return nxtLine;
 }
