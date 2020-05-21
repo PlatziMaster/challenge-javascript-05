@@ -9,11 +9,13 @@ Las filas del triángulo de Pascal se enumeran convencionalmente comenzando con 
 Formula
 
 ### Instalación
+
 ```
 npm install
 ```
 
 ### test
+
 ```
 npm run test
 ```
@@ -23,10 +25,13 @@ npm run test
 Genera un algoritmo que calcule los coeficientes del triángulo de Pascal para un número de línea específico
 
 ### Enviar solución de reto
+
 Debes hacer un "Fork" de este proyecto, revolver los problemas y crear un Pull Request hacia este repositorio.
 
 ### Contribuir
+
 Si alguien quiere agregar o mejorar algo, lo invito a colaborar directamente en este repositorio: [challenge-javascript-05](https://github.com/platzimaster/challenge-javascript-05/)
 
 ### Licencia
-challenge-javascript-03 se lanza bajo la licencia [MIT](https://opensource.org/licenses/MIT).
+
+challenge-javascript-05 se lanza bajo la licencia [MIT](https://opensource.org/licenses/MIT).
