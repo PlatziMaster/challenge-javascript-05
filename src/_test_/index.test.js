@@ -2,6 +2,7 @@ const pascalTriangle = require('../index');
 
 describe('pascalTriangle', () => {
   it('Debe calcular los coeficientes del triángulo de Pascal para un número de línea específico', () => {
+    expect(pascalTriangle(5)).toEqual([1, 5, 10, 10, 5, 1]);
     expect(pascalTriangle(0)).toEqual([1]);
     expect(pascalTriangle(1)).toEqual([1, 1]);
     expect(pascalTriangle(2)).toEqual([1, 2, 1]);
@@ -12,3 +13,6 @@ describe('pascalTriangle', () => {
     expect(pascalTriangle(7)).toEqual([1, 7, 21, 35, 35, 21, 7, 1]);
   });
 });
+
+
+
