@@ -4,8 +4,7 @@
   "description": "Triángulo De Pascal",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "dev": "node src/index"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
