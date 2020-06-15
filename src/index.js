@@ -14,7 +14,6 @@ const pascalTriangle = (lineNumber) => {
             temp.push(sum);
 
         }
-        console.log(temp);
         if (temp.length > 0) {
             resp =[1,
                  ...temp,
