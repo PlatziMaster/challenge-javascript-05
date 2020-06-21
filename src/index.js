@@ -5,20 +5,28 @@
 
 const pascalTriangle = (lineNumber) => {
   let result;
-  lineNumber > 0 ? (result = [1, 1]) : (result = [1]);
 
-  for (let i = 0; lineNumber > 1 && i < lineNumber - 1; i++) {
-    let tmp = [];
-    for (let j = 0; j < result.length - 1; j++) {
-      let sum = result[j] + result[j + 1];
-      tmp.push(sum);
-    }
-    if (tmp.length > 0) {
+  if (lineNumber == 0) {
+    return [1];
+  } else if (lineNumber == 1) {
+    return [1, 1];
+  } else {
+    result = [1, 1];
+
+    const iteraciones = (result, lineNumber) => {
+      let tmp = [];
+      for (let j = 0; j < result.length - 1; j++) {
+        let sum = result[j] + result[j + 1];
+        tmp.push(sum);
+      }
       result = [1, ...tmp, 1];
-    }
-  }
 
-  return result;
+      return result.length === lineNumber + 1
+        ? result
+        : iteraciones(result, lineNumber);
+    };
+    iteraciones(result, lineNumber);
+  }
 };
 
 module.exports = pascalTriangle;

@@ -1,7 +1,7 @@
-const pascalTriangle = require('../index');
+const pascalTriangle = require("../index");
 
-describe('pascalTriangle', () => {
-  it('Debe calcular los coeficientes del triángulo de Pascal para un número de línea específico', () => {
+describe("pascalTriangle", () => {
+  it("Debe calcular los coeficientes del triángulo de Pascal para un número de línea específico", () => {
     expect(pascalTriangle(0)).toEqual([1]);
     expect(pascalTriangle(1)).toEqual([1, 1]);
     expect(pascalTriangle(2)).toEqual([1, 2, 1]);
