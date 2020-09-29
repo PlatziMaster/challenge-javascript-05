@@ -3,20 +3,11 @@
  * @return {number[]}
  */
 
-const pascalTriangle = (lineNumber, line=[1]) => {
-  
-
-  if(lineNumber != line.length) {
-    if(lineNumber===0) return line
-    line = pascalTriangle(--lineNumber, line)
-  }
-  
+const arreglo = [1]
+const pascalTriangle = (lineNumber, line) => {
   let newArreglo = [1]
   let iteration = --line.length
   let left, right, index=0, indexNext=1, newValue
-
-  // create array 
-
   do {
     if (indexNext <= line.length ){
       left = line[index]
@@ -32,11 +23,11 @@ const pascalTriangle = (lineNumber, line=[1]) => {
     ++indexNext
     --iteration
   } while (iteration >= 0 )
-  
+  console.log(newArreglo);
+
   return newArreglo
 }
 
-let rr = pascalTriangle(2)
-console.log(rr);
+pascalTriangle(2, arreglo)
 
 module.exports = pascalTriangle;
