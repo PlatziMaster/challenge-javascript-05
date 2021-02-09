@@ -3,16 +3,16 @@
  * @return {number[]}
  */
 
- const pascalTriangle = (number) => {
+ const pascalTriangle = (lineNumber) => {
     let triangle = [[1, 1]];
-    if(number === 0) {
+    if(lineNumber === 0) {
       return [1];
-    } else if(number === 1) {
+    } else if(lineNumber === 1) {
       return triangle[0];
     } else {
       let pascalRow;
 
-      for (let i = 0; i < number - 1; i++) {
+      for (let i = 0; i < lineNumberÑ - 1; i++) {
         pascalRow = [];
         pascalRow.push(1);
 
