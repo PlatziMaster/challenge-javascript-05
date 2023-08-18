@@ -1,32 +1,40 @@
-# challenge-javascript-05 - Triángulo De Pascal
+# Descubre el Triángulo de Pascal con JavaScript
 
-En matemáticas, el triángulo de Pascal es una matriz triangular de los coeficientes binomiales.
+## Explorando el Misterio Matemático del Triángulo de Pascal
 
-Las filas del triángulo de Pascal se enumeran convencionalmente comenzando con la fila n = 0 en la parte superior (la fila 0). Las entradas en cada fila están numeradas desde la izquierda comenzando con k = 0 y generalmente están escalonadas en relación con los números en las filas adyacentes. El triángulo se puede construir de la siguiente manera: en la fila 0 (la fila superior), hay una entrada única distinta de cero 1. Cada entrada de cada fila posterior se construye sumando el número de arriba y a la izquierda con el número de arriba y a la derecha, tratando las entradas en blanco como 0. Por ejemplo, el número inicial en la primera (o cualquier otra) fila es 1 (la suma de 0 y 1), mientras que los números 1 y 3 en la tercera fila se suman para producir el número 4 en la cuarta fila.
+El triángulo de Pascal es una maravilla en el mundo de las matemáticas. Consiste en una matriz triangular repleta de coeficientes binomiales que ha fascinado a matemáticos y entusiastas durante siglos.
+
+Las filas de este triángulo comienzan desde la parte superior con la fila \( n = 0 \) (conocida como fila 0). Cada fila está compuesta por números que se obtienen de una manera peculiar: sumando el número inmediatamente superior y a su izquierda con el número superior y a su derecha. Si no hay un número para sumar (es decir, estamos en un borde), simplemente se considera como 0. Por ejemplo, los números 1 y 3 en la tercera fila se suman para producir el número 4 en la cuarta fila.
+
+Para ilustrar mejor el concepto, aquí tienes una representación visual del triángulo:
 
 ![Ejemplo del triángulo de pascal](https://camo.githubusercontent.com/72284151ec324e5c51a0603de57db949843d38e7/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f302f30642f50617363616c547269616e676c65416e696d61746564322e676966)
 
-Formula
+## Configuración y Herramientas
 
-### Instalación
+**Instalación**
+
+Para comenzar con este desafío, primero instala las dependencias necesarias:
+
 ```
 npm install
 ```
 
-### test
+**Pruebas**
+
+Asegúrate de que tu algoritmo funcione correctamente ejecutando las pruebas:
+
 ```
 npm run test
 ```
 
-### RETO
+## Desafío: ¡Sumérgete en el Triángulo!
 
-Genera un algoritmo que calcule los coeficientes del triángulo de Pascal para un número de línea específico
+Tu tarea es diseñar un algoritmo en JavaScript que pueda calcular los coeficientes de una línea específica del triángulo de Pascal. ¿Estás listo para el reto?
 
-### Enviar solución de reto
-Debes hacer un "Fork" de este proyecto, revolver los problemas y crear un Pull Request hacia este repositorio.
+## Colabora y Comparte
 
-### Contribuir
-Si alguien quiere agregar o mejorar algo, lo invito a colaborar directamente en este repositorio: [challenge-javascript-05](https://github.com/platzimaster/challenge-javascript-05/)
+Una vez que hayas conquistado el desafío, comparte tu solución con la comunidad. Haz un "Fork" de este proyecto, implementa tu solución y envía un "Pull Request" a [challenge-javascript-05](https://github.com/platzimaster/challenge-javascript-05/).
 
-### Licencia
-challenge-javascript-03 se lanza bajo la licencia [MIT](https://opensource.org/licenses/MIT).
+Y si tienes alguna idea para mejorar el desafío o agregar más funcionalidades, ¡eres más que bienvenido a colaborar!
+
